@@ -1,0 +1,247 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #1a1a1a;
+    min-height: 100vh;
+}
+
+/* Navbar Styling */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 50px;
+    background-color: #f0f2f5;
+    align-items: center;
+    gap: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1e2d50;
+    font-weight: bold;
+    font-size: 11pt;
+}
+
+.nav-item {
+    position: relative;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+.nav-active {
+    background-color: #ffcc5c;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #e0e0e0;
+    min-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 10px 0;
+}
+
+.nav-item:hover .dropdown {
+    display: block;
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 12pt;
+    color: #1e2d50;
+    border-bottom: 1px solid #ccc;
+}
+
+.dropdown a:last-child {
+    border-bottom: none;
+}
+
+.dropdown a:hover {
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            align-items: stretch;
+
+}
+
+        /* Pricing Cards
+        .pricing-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            align-items: stretch;
+            padding: 2rem;
+
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            align-items: stretch;
+            padding: 2rem;
+        }  */
+        
+        .card {
+            background: white;
+            border: 1px solid white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            vertical-align: top;
+            transition: 0.3s ease;
+            position: relative;
+            justify-content: center;
+            border-radius: 1rem;
+            text-align: center;
+            transition: transform 0.3s ease;
+            position: relative;
+            border: 1px solid #e2e8f0;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            border: 1px solid #ffcc5c;
+        }
+
+        .badge {
+            background: #ffcc5c;
+            padding: 5px 15px;
+            border-radius: 15px;
+            font-size: 13pt;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .price { 
+            font-size: 24pt; 
+            font-weight: bold; 
+            margin-bottom: 25px; 
+        }
+        .features { text-align: left; list-style: none; padding: 0 20px; margin-bottom: 30px; }
+        .features li { margin-bottom: 10px; font-size: 11pt; color: #444; border-bottom: 1px solid #f1f5f9;}
+        .features li::before { content: "\2714"; color: #22c55e; font-weight: bold; }
+
+/* Layout Utilities */
+
+
+.btn {
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn-yellow {
+    background-color: #ffcc5c;
+    color: black;
+}
+
+.btn-blue {
+    background-color: #1e2d50;
+    color: white;
+}
+
+        .section-header h3 {
+            margin-top: 10px;
+            justify-content: center;
+            text-align: center;
+            font-size: 2.5rem;
+        }
+
+        .section-header p {
+            margin-top: -30px;
+            justify-content: center;
+            text-align: center;
+            font-size: 1rem;
+        }
+
+        
+        /* Toggle Switch */
+        .toggle-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem 0;
+            width: 100%;
+        }
+
+        .toggle-wrapper {
+            display: flex;
+            background: #dcdcdc;
+            padding: 5px;
+            border-radius: 99px;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+        } */
+
+        .toggle-btn.active {
+            padding: 10px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            border-radius: 99px;
+            background-color: white;
+        }
+        .toggle-btn {
+            padding: 10px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            color: #555;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            border-radius: 99px;
+        }
+
+footer {
+    background-color: #ffcc5c;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    position: relative;
+    display:block;
+    justify-content:center;
+}
+
+/* Untuk layar Tablet/Desktop */
+@media (min-width: 768px) {
+    .card {
+        width: calc(33.33% - 30px); /* 3 kolom */
+    }
+}
+
+/* Untuk layar Mobile (di bawah 768px) */
+@media (max-width: 767px) {
+    nav {
+        padding: 15px 20px;
+        justify-content: center; /* Navbar ke tengah di HP */
+    }
+    
+    .section-header h1 {
+        font-size: 24pt; /* Perkecil judul di HP */
+    }
+}

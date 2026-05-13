@@ -1,0 +1,90 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e2d50;
+    color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Layout Utilities */
+.container {
+    padding: 2rem;
+    text-align: center;
+    flex: 1;
+}
+
+.btn {
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn-yellow {
+    background-color: #ffcc5c;
+    color: black;
+}
+
+.btn-blue {
+    background-color: #1e2d50;
+    color: white;
+}
+
+        .hero {
+            background: linear-gradient(rgba(30, 45, 80, 0.85), rgba(30, 45, 80, 0.85)), url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1920&q=80');
+            background-position: center;
+            background-size: cover;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 0 10%;
+            color: white;
+        }
+        .hero h2 { color: #ffcc5c; font-size: 1.7rem; margin-bottom: 10px; }
+        .hero h1 { font-size: 32pt; max-width: 800px; line-height: 1.2; margin-bottom: 20px; }
+        .hero p { max-width: 800px; margin-bottom: 30px; font-size: 11pt; line-height: 1.6; opacity: 0.9; }
+        .cta-group { display: flex; gap: 20px; align-items: center; }
+        .cta-group a.contact-link { color: white; text-decoration: underline; }
+
+        footer {
+            background-color: #ffcc5c;
+            text-align: center;
+            padding: 15px;
+            font-weight: bold;
+            position: relative;
+            display:block;
+            justify-content:center;
+        }
+
+        @media (max-width: 640px) {
+            .hero h2 {
+                font-size: 1rem;
+            }
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+            .hero p {
+                font-size: 0.7rem;
+            }
+            .cta-group {
+                width: 100%;
+                gap: 15px;
+                font-size: 0.7rem;
+            }
+
+            .cta-group a.contact-link { 
+            margin-bottom: 2rem; 
+            }
+
+            footer {
+                font-size: 0.7rem;
+            }
+        }
