@@ -257,7 +257,8 @@ nav a {
             background-color: #ffcc5c;
             text-align: center;
             padding: 15px;
-            font-weight: bold;
+            font-weight: lighter;
+            font-style: italic;
             margin-top: auto;
         }
 
